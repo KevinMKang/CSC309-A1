@@ -6,6 +6,8 @@ You will practise building an HTML web page with CSS for layout and style, and J
 
 Read these specifications carefully, particularly **Code Specifications** at the end. **Assignments that do not adhere to code specifications may receive a grade of 0 for functional correctness**.
 
+---
+
 ### Part 1: Navigation 
 
 Implement a responsive navigation bar, as seen in Lab 3. That is, navigation links should be in a single row for larger screens, and stacked and collapsed for smaller screens (see advanced section of Lab 3). 
@@ -13,7 +15,8 @@ Implement a responsive navigation bar, as seen in Lab 3. That is, navigation lin
 There should be a 'logo' section with the name of your profile. The navigation links should be anchor links to the other sections of the page
  - one link to the profile information in part 2 
  - one link to the feed section in part 3
-
+ 
+---
 ### Part 2: Profile information
 
 The next section on the page should contain profile information. This could be information about yourself or the character whose profile you are creating. 
@@ -33,7 +36,7 @@ And should contain a section for external / contact links:
  - 2 other links of your choosing 
  
 Reminder: All components are to be responsive.
-
+---
 ### Part 3: Profile Feed
 
 Implement a status feed for your profile. This is similar to Twitter or Facebook statuses. This component should also be responsive. **Remember that all data is non-persistent**; this is a front-end only assignment. Any input by the user will be lost upon page refresh.
@@ -50,6 +53,7 @@ There are two types of posts that can be made: text posts or photo posts. Each p
 
 Each post should keep a simple counter of the number of 'likes'. There is to be a button within each post and pressing the button will increment the number of 'likes' on the post by 1. The counter starts at 0. The button can be pressed as many times as you'd like. 
 
+---
 ## Details
 A solution that fully satisfies the above specifications in a simple way with minimal design work will receive approximately 70%.
 Style the layout and components such that they are visually appealing. A well-designed page that meets specifications will receive up to 85%.
@@ -61,6 +65,7 @@ Extra features you may want to consider:
  - additional profile information
  - checking the URL to make sure that it is a photo type
 
+---
 ## What to submit:
 - `profile.html`
 - `profile.css`
@@ -73,6 +78,7 @@ Your assignment should be able to load in the latest version of Chrome and Firef
 
 Reminder: It is an academic offence to submit work that is not your own without attribution.  If you find a function or snippets of code that help you implement your assignment, you must cite where you got the code from.
 
+---
 ## Rough Marking Scheme
 
  - Functional correctness - 60%
@@ -84,6 +90,7 @@ Clean, polished code will receive a higher mark than mostly working fancy featur
 All JS should be in your .js file and all CSS should be in your .css file. Do not inline CSS or JS.
 HTML elements should be **semantic** - using `<nav>`, `<aside`>, `<article>`, etc., instead of using `<div>` all the time
 
+---
 ## Code Specification
 **Your code will be partially autograded**
 
@@ -127,12 +134,14 @@ To facilitate autograding, you **must** include the following **classes** as tes
  https://validator.w3.org/
  https://jigsaw.w3.org/css-validator/
  
+ ---
  ## Checklist Before Submitting
  - Run code through HTML & CSS Validators
  - All test class hooks are included
  - All components are responsive
  - Files are named according to the `What to submit` section
  
+ ---
 ## How to Submit
  - Submit a pull request to your A1 repo.
 
