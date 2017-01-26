@@ -75,7 +75,7 @@ Reminder: It is an academic offence to submit work that is not your own without 
  - Web page style - 10%
  - Polish and extra feature(s) - 15%
  
-Clean, polished code will receive a higher mark that mostly working fancy features.  
+Clean, polished code will receive a higher mark than mostly working fancy features.  
 
 ## Code Specification
 **Your code will be partially autograded**
