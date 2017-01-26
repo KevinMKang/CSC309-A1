@@ -2,6 +2,8 @@
 
 You will practise building an HTML web page with CSS for layout and style, and Javascript to make it dynamic, by building a profile page - either for yourself, or for a fictional character. All components of the page should be responsive. Changes made to the page during user interactions are non-persistent; refreshing the page will reset all changes.
 
+Read these specifications carefully, particularly **Code Specifications** at the end. Assignments that do not adhere to code specifications may receive a grade of 0 for functional correctness.
+
 ### Part 1: Navigation 
 
 Implement a responsive navigation bar, as seen in Lab 3. That is, navigation links should be in a single row for larger screens, and stacked and collapsed for smaller screens (see advanced section of Lab 3). 
@@ -82,7 +84,7 @@ Clean, polished code will receive a higher mark than mostly working fancy featur
 ## Code Specification
 **Your code will be partially autograded**
 
-To facilitate autograding, you **must** include the following **classes** as test hooks:
+To facilitate autograding, you **must** include the following **classes** as test hooks. Assignments that do not implement these test hooks may receive a grade of 0 on functional correctness.
 
 #### Part 1:
  - `test--nav` on the navigation bar
@@ -104,12 +106,17 @@ To facilitate autograding, you **must** include the following **classes** as tes
  - `test--like_button` - the 'like' button in each post
  - `test--like_count` - the 'like' count of each post
  
- 
- A basic example of a test that may be run on your page has been included - see simple_test.py
- A very basic example that passes simple_test.py has also been included - see index.html
+ A basic example of a test that may be run on your page has been included - see `simple_test.py`
+ A basic example that passes simple_test.py has also been included - see `index.html`
  
  **Do not use these test hooks as your javascript or CSS hooks.**
  You should use other classes for styling or js functionality.
+ 
+ Your code will also be validated using HTML5 validator and CSS Jigsaw validator.
+ Run your code through these yourself before submitting:
+ https://validator.w3.org/
+ https://jigsaw.w3.org/css-validator/
+ 
  
 
 
