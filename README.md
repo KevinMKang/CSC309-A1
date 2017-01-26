@@ -1,5 +1,7 @@
 # Assignment 1: Personal Profile Page
 
+## Due Date: Feb 10, 10:00pm
+
 You will practise building an HTML web page with CSS for layout and style, and Javascript to make it dynamic, by building a profile page - either for yourself, or for a fictional character. All components of the page should be responsive. Changes made to the page during user interactions are non-persistent; refreshing the page will reset all changes.
 
 Read these specifications carefully, particularly **Code Specifications** at the end. **Assignments that do not adhere to code specifications may receive a grade of 0 for functional correctness**.
