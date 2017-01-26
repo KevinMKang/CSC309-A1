@@ -129,8 +129,8 @@ A basic example of a test that may be run on your page has been included - see `
 A basic example that passes simple_test.py has also been included - see the example `profile.html`
  
 To run simple_test.py as an example, make sure you have installed:
- - selenium [here](https://pypi.python.org/pypi/selenium) 
- - chrome driver for selenium: [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+ - [Selenium](https://pypi.python.org/pypi/selenium) 
+ - [Chrome Driver for Selenium](https://sites.google.com/a/chromium.org/chromedriver/downloads)
  
 ```
 python simple_test.py
