@@ -2,7 +2,7 @@
 
 You will practise building an HTML web page with CSS for layout and style, and Javascript to make it dynamic, by building a profile page - either for yourself, or for a fictional character. All components of the page should be responsive. Changes made to the page during user interactions are non-persistent; refreshing the page will reset all changes.
 
-Read these specifications carefully, particularly **Code Specifications** at the end. Assignments that do not adhere to code specifications may receive a grade of 0 for functional correctness.
+Read these specifications carefully, particularly **Code Specifications** at the end. **Assignments that do not adhere to code specifications may receive a grade of 0 for functional correctness**.
 
 ### Part 1: Navigation 
 
@@ -79,6 +79,7 @@ Reminder: It is an academic offence to submit work that is not your own without 
  - Polish and extra feature(s) - 15%
  
 Clean, polished code will receive a higher mark than mostly working fancy features.  
+All JS should be in your .js file and all CSS should be in your .css file. Do not inline CSS or JS.
 
 
 ## Code Specification
@@ -117,6 +118,13 @@ To facilitate autograding, you **must** include the following **classes** as tes
  https://validator.w3.org/
  https://jigsaw.w3.org/css-validator/
  
+ ## Checklist Before Submitting
+ - Run code through HTML & CSS Validators
+ - All test class hooks are included
+ - All components are responsive
+ - Files are named according to the `What to submit` section
  
+## How to Submit
+ - Submit a pull request to your A1 repo.
 
 
