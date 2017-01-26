@@ -36,6 +36,7 @@ And should contain a section for external / contact links:
  - 2 other links of your choosing 
  
 Reminder: All components are to be responsive.
+
 ---
 ### Part 3: Profile Feed
 
