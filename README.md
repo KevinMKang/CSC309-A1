@@ -110,6 +110,12 @@ To facilitate autograding, you **must** include the following **classes** as tes
  A basic example of a test that may be run on your page has been included - see `simple_test.py`
  A basic example that passes simple_test.py has also been included - see `index.html`
  
+ To run simple_test.py as an example, make sure you have selenium installed https://pypi.python.org/pypi/selenium along with the chrome driver for selenium: https://sites.google.com/a/chromium.org/chromedriver/downloads
+ 
+ ```
+ python simple_test.py
+ ```
+ 
  **Do not use these test hooks as your javascript or CSS hooks.**
  You should use other classes for styling or js functionality.
  
