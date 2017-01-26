@@ -108,7 +108,7 @@ To facilitate autograding, you **must** include the following **classes** as tes
  - `test--like_count` - the 'like' count of each post
  
  A basic example of a test that may be run on your page has been included - see `simple_test.py`
- A basic example that passes simple_test.py has also been included - see `index.html`
+ A basic example that passes simple_test.py has also been included - see the example `profile.html`
  
  To run simple_test.py as an example, make sure you have selenium installed https://pypi.python.org/pypi/selenium along with the chrome driver for selenium: https://sites.google.com/a/chromium.org/chromedriver/downloads
  
