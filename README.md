@@ -36,9 +36,9 @@ Implement a status feed for your profile. This is similar to Twitter or Facebook
 
 There are two types of posts that can be made: text posts or photo posts. Each post should contain the timestamp of when the post was made, as well as the profile's name and photo. 
 
-Text post: There is a text box into which you can enter text, and a button which 'posts' this text onto your profile feed. 
+**Text post**: There is a text box into which you can enter text, and a button which 'posts' this text onto your profile feed. 
 
-Photo post: There is a text box into which a URL to a photo can be entered, and a button which 'posts' this photo onto your profile feed. No need to worry about file type checking or anything to make sure that the input is indeed a URL for a photo.  
+**Photo post**: There is a text box into which a URL to a photo can be entered, and a button which 'posts' this photo onto your profile feed. No need to worry about file type checking or anything to make sure that the input is indeed a URL for a photo.  
 
 #### Interaction 2: Liking
 
