@@ -107,6 +107,7 @@ To facilitate autograding, you **must** include the following **classes** as tes
  - `test--profile_location` - on the location of the user
  - `test--profile_hobbies` - on the hobbies of the user
  - `test--profile_links` - on the user's external links
+ - `test--profile_bio` - on the user's bio
 
 #### Part 3:
  - `test--post` - the wrapper on each new post made
