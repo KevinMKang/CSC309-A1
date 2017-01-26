@@ -27,10 +27,12 @@ And should contain a section for external / contact links:
  - The GitHub account you are using for this course
  - link to email you
  - 2 other links of your choosing 
+ 
+Reminder: All components are to be responsive.
 
 ### Part 3: Profile Feed
 
-Implement a status feed for your profile. This is similar to Twitter or Facebook statuses. 
+Implement a status feed for your profile. This is similar to Twitter or Facebook statuses. This component should also be responsive. **Remember that all data is non-persistent**; This is a front-end only assignment. Any input by the user will be lost upon page refresh.
 
 #### Interaction 1: Posting
 
@@ -64,7 +66,7 @@ Extra features you may want to consider:
 
 The README.md file will contain any information you would like to pass onto the grader regarding design decisions and additional features.  It is also the place to indicate if you were able to partially complete one or more of the questions.  This should not be a long document and will not be graded.
 
-Your assignment should be able to load in the latest version of Chrome or Firefox. Your code should be clean and concise and easily readable. 
+Your assignment should be able to load in the latest version of Chrome and Firefox. Your code should be clean and concise and easily readable. 
 
 Reminder: It is an academic offence to submit work that is not your own without attribution.  If you find a function or snippets of code that help you implement your assignment, you must cite where you got the code from.
 
