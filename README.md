@@ -34,7 +34,7 @@ Reminder: All components are to be responsive.
 
 ### Part 3: Profile Feed
 
-Implement a status feed for your profile. This is similar to Twitter or Facebook statuses. This component should also be responsive. **Remember that all data is non-persistent**; This is a front-end only assignment. Any input by the user will be lost upon page refresh.
+Implement a status feed for your profile. This is similar to Twitter or Facebook statuses. This component should also be responsive. **Remember that all data is non-persistent**; this is a front-end only assignment. Any input by the user will be lost upon page refresh.
 
 #### Interaction 1: Posting
 
@@ -80,7 +80,7 @@ Reminder: It is an academic offence to submit work that is not your own without 
  
 Clean, polished code will receive a higher mark than mostly working fancy features.  
 All JS should be in your .js file and all CSS should be in your .css file. Do not inline CSS or JS.
-
+HTML elements should be **semantic** - using `<nav>`, `<aside`>, `<article>`, etc., instead of using `<div>` all the time
 
 ## Code Specification
 **Your code will be partially autograded**
@@ -99,9 +99,10 @@ To facilitate autograding, you **must** include the following **classes** as tes
  - `test--profile_links` - on the user's external links
 
 #### Part 3:
+ - `test--post` - the wrapper on each new post made
+ - `test--post_content` - the content in each new post (given from the input box)
  - `test--input_text` - the input box into which text updates are entered 
  - `test--input_button` - the button by which text updates are posted
- - `test--post` - the wrapper on each new post
  - `test--photo_url` - the input box into which photo URL posts are entered
  - `test--photo_button` - the button by which photo updates are posted
  - `test--like_button` - the 'like' button in each post
@@ -115,7 +116,7 @@ To facilitate autograding, you **must** include the following **classes** as tes
  ```
  python simple_test.py
  ```
- 
+
  **Do not use these test hooks as your javascript or CSS hooks.**
  You should use other classes for styling or js functionality.
  
