@@ -17,7 +17,8 @@ The next section on the page should contain profile information. This could be i
 The main content portion of the page should have this information:
  
  - Name
- - Photo
+ - Cover photo
+ - Profile Photo
  - Location
  - List of hobbies/interests
  - Blurb / bio
@@ -29,13 +30,17 @@ And should contain a section for external / contact links:
 
 ### Part 3: Profile Feed
 
-Implement a status feed for your profile. This is similar to Twitter or Facebook statuses.
+Implement a status feed for your profile. This is similar to Twitter or Facebook statuses. 
 
-#### Interaction 1: 
+#### Interaction 1: Posting
 
-There is to be a text box into which you can enter text, and a button which 'posts' this text onto your profile page. The profile page will show a list of updates that have been posted. Each post should contain the timestamp of when the post was made, as well as the profile's name and photo.
+There are two types of posts that can be made: text posts or photo posts. Each post should contain the timestamp of when the post was made, as well as the profile's name and photo. 
 
-#### Interaction 2: 
+Text post: There is a text box into which you can enter text, and a button which 'posts' this text onto your profile feed. 
+
+Photo post: There is a text box into which a URL to a photo can be entered, and a button which 'posts' this photo onto your profile feed. No need to worry about file type checking or anything to make sure that the input is indeed a URL for a photo.  
+
+#### Interaction 2: Liking
 
 Each post should keep a simple counter of the number of 'likes'. There is to be a button within each post and pressing the button will increment the number of 'likes' on the post by 1. The counter starts at 0. The button can be pressed as many times as you'd like. 
 
@@ -48,6 +53,7 @@ Extra features you may want to consider:
  - smooth scrolling for the anchor links in the nav bar
  - transitions or animations for interactions
  - additional profile information
+ - checking the URL to make sure that it is a photo type
 
 ## What to submit:
 - `profile.html`
