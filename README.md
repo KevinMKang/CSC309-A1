@@ -63,7 +63,6 @@ Extra features you may want to consider:
 - `profile.js`
 - any other appropriately named CSS or JS files used in your assignment
 
-
 The README.md file will contain any information you would like to pass onto the grader regarding design decisions and additional features.  It is also the place to indicate if you were able to partially complete one or more of the questions.  This should not be a long document and will not be graded.
 
 Your assignment should be able to load in the latest version of Chrome and Firefox. Your code should be clean and concise and easily readable. 
@@ -79,9 +78,38 @@ Reminder: It is an academic offence to submit work that is not your own without 
  
 Clean, polished code will receive a higher mark than mostly working fancy features.  
 
+
 ## Code Specification
 **Your code will be partially autograded**
 
-TODO: fill in this section with autograding details
+To facilitate autograding, you **must** include the following **classes** as test hooks:
+
+#### Part 1:
+ - `test--nav` on the navigation bar
+
+#### Part 2:
+ - `test--profile_name` - on the name of the user
+ - `test--profile_cover-photo` - on the cover photo of the user
+ - `test--profile_photo` - on the profile photo of the user
+ - `test--profile_location` - on the location of the user
+ - `test--profile_hobbies` - on the hobbies of the user
+ - `test--profile_links` - on the user's external links
+
+#### Part 3:
+ - `test--input_text` - the input box into which text updates are entered 
+ - `test--input_button` - the button by which text updates are posted
+ - `test--post` - the wrapper on each new post
+ - `test--photo_url` - the input box into which photo URL posts are entered
+ - `test--photo_button` - the button by which photo updates are posted
+ - `test--like_button` - the 'like' button in each post
+ - `test--like_count` - the 'like' count of each post
+ 
+ 
+ A basic example of a test that may be run on your page has been included - see simple_test.py
+ A very basic example that passes simple_test.py has also been included - see index.html
+ 
+ **Do not use these test hooks as your javascript or CSS hooks.**
+ You should use other classes for styling or js functionality.
+ 
 
 
