@@ -9,10 +9,9 @@
  * the "mobile" device sizes first, then overridden on larger devices.
  */
  
- header span.img{
-	 display: block;
- }
-
+header span.img {
+    display: block;
+}	
 	a{
 		color: white;
 	}
@@ -22,19 +21,20 @@
 		color : white;
 		text-align: center;
 		width: 100%;
+
 		font-size: 200%;	
-		display: inline-blockblock;
+		display: inline-block;
 		vertical-align: middle;	
 		padding: 10px 0px;
 		
 	}	
 		
 	#menu{
-		background-color: Green;
+		background-color: LightGray;
 		color : white;
-		width: 100%;
-		height: 100%:
 		text-align: center;
+		width: 100%;
+
 		font-size: 200%;	
 		display: inline-block;
 		vertical-align: middle;
@@ -75,7 +75,7 @@
     /* Re-style here... */
 	
 
-	}	
+	
 		    
 }
 /* We're skipping a lot of possible breakpoints here ... */
