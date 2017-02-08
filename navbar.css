@@ -1,0 +1,104 @@
+/* E.g. Style Guide: https://google.github.io/styleguide/htmlcssguide.xml */
+
+
+/**
+ * Your main styles at the top apply to the smallest screen/viewport,
+ * e.g. width of 320px, or anything less than the following breakpoint.
+ * Ordering the breakpoints in this way, smallest to biggest, is loosely
+ * called a "mobile-first" approach to responsive design. The CSS targets
+ * the "mobile" device sizes first, then overridden on larger devices.
+ */
+ 
+ header span.img{
+	 display: block;
+ }
+
+	a{
+		color: white;
+	}
+	
+	#logo{
+		background-color: PowderBlue;
+		color : white;
+		text-align: center;
+		width: 100%;
+		font-size: 200%;	
+		display: inline-blockblock;
+		vertical-align: middle;	
+		padding: 10px 0px;
+		
+	}	
+		
+	#menu{
+		background-color: Green;
+		color : white;
+		width: 100%;
+		height: 100%:
+		text-align: center;
+		font-size: 200%;	
+		display: inline-block;
+		vertical-align: middle;
+	}	
+	
+	ul{
+		list-style: none;
+		margin: 10px;
+	}
+	
+	li{
+		color: grey;
+		margin: 10px 30px;
+	}	
+		
+
+	
+
+
+/**
+ * This is our first breakpoint!
+ * If you increase the viewport (your browser window) size from 479px to 480px,
+ * (e.g. depending on the mobile phone size, perhaps changing the orientation
+ * of the phone to horizontal will trigger this breakpoint).
+ * Note: there is no "upper limit" in this breakpoint, so any styles in other
+ * following breakpoints after this could override this one.
+ */
+
+@media screen and (min-width: 480px) {
+
+    /**
+     * Tip! Since we need floating columns, we can apply the floats here
+     * and also the self-clearing container trick.
+     * Incase you're wondering `::after` is a pseudo element:
+     * http://www.w3schools.com/CSSref/sel_after.asp
+     */
+
+    /* Re-style here... */
+	
+
+	}	
+		    
+}
+/* We're skipping a lot of possible breakpoints here ... */
+
+
+/**
+ * At 1280px viewport width, any styles declared in this breakpoint will
+ * override previous styles with matching signatures.
+ */
+
+@media screen and (min-width: 1280px) {
+    /* Re-style here, if necessary! */
+	
+	#logo{
+		width:15%;
+	}
+	
+	#menu{
+		width: 85%;
+		float: right;		
+	}
+	
+	li{
+		display: inline;
+	}
+}
