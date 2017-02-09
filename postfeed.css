@@ -7,8 +7,15 @@
     background: salmon;
     padding: 10px;
     margin: 15px;
+	border-radius: 10px
 }
 
 .post_content{
 	background: green;
 }
+
+#post_feed{
+	text-align: center;
+	
+}
+

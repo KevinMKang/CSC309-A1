@@ -3,20 +3,22 @@
     <head>
         <title>CSC309 A1</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="profile.css">
 		<link rel="stylesheet" href="navbar.css">
 		<link rel="stylesheet" href="postfeed.css">
     </head>
     <body>
 	
-		<header>		
-			<span id='logo' class='img'>CSC309 Profile</span>
-			<nav id='menu' class='test--nav'>
-				<ul>
-					<li><a href="#profile">Profile</a></li>
-					<li><a href="#post_feed">Post Feed</a></li>
-				</ul>
+		<header>			
+			<button class="menu_button" onclick="openMenu()">
+				<div class="dropdown_sub"></div>
+				<div class="dropdown_sub"></div>
+				<div class="dropdown_sub"></div>
+			</button>		
+			<span id='logo' class='img'>CSC309 Profile</span>			
+			<nav id="menu" class="test--nav">				
+				<ul><li><a href="#profile">Profile</a></li><li><a href="#post_feed">Post Feed</a></li></ul>
 			</nav>
 		</header>
 		
@@ -69,7 +71,7 @@
             </div>
         </section>
 		
-
+		
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>

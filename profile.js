@@ -1,5 +1,9 @@
 var id = 0;
 
+function openMenu(){
+	document.getElementById('menu').style.display =  document.getElementById('menu').style.display == 'block' ? 'none' : 'block';
+}
+
 $(function(){
     $('.input_button').on('click', function(){
         text = $('.input_text').val();
@@ -40,4 +44,6 @@ $(function(){
 		
     });
 });
+
+
 
