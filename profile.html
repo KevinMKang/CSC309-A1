@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>CSC309 A1</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="profile.css">
 		<link rel="stylesheet" href="navbar.css">
 		<link rel="stylesheet" href="postfeed.css">
@@ -8,8 +11,8 @@
     <body>
 	
 		<header>		
-			<span id='logo' class="img">CSC309 Profile</span>
-			<nav id="menu" class="test--nav">
+			<span id='logo' class='img'>CSC309 Profile</span>
+			<nav id='menu' class='test--nav'>
 				<ul>
 					<li><a href="#profile">Profile</a></li>
 					<li><a href="#post_feed">Post Feed</a></li>
@@ -18,16 +21,16 @@
 		</header>
 		
 		<div id="cover_photo">
-			<img class="test--profile_cover-photo" src="assets/cover.jpg"/>
+			<img class="test--profile_cover-photo" src="assets/cover.jpg" alt="cover" />
 		</div>			
 		
-		<div id="profile"><a name="profile"/>		
+		<div id="profile">		
 
 			<div id="profile-left">
-				<img id="profile_photo" class="test--profile_photo" src="assets/avatar.png"/>
+				<img id="profile_photo" class="test--profile_photo" src="assets/avatar.png" alt="photo" />
 				<section id="info">					
 					
-					<p id="profile_name" class="test--profile_name">Jhin, the Virtuoso</p>					
+					<h2 id="profile_name" class="test--profile_name">Jhin, the Virtuoso</h2>					
 					<p id="location" class="test--profile_location">Ionia</p>
 					
 					
@@ -60,10 +63,10 @@
         <button type="submit" class="photo_button test--photo_button">Post Image</button>
 		
 		
-        <section id="post_feed"><a name="post_feed" />
+        <section id="post_feed">
             <h2>Recent Posts</h2>
-            <section class="post_feed test--post_feed">
-            </section>
+            <div class="post_feed test--post_feed">
+            </div>
         </section>
 		
 
