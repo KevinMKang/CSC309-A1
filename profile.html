@@ -8,7 +8,7 @@
     <body>
 	
 		<header>		
-			<span id='logo' class="img">Kevin M Kang</span>
+			<span id='logo' class="img">CSC309 Profile</span>
 			<nav id="menu" class="test--nav">
 				<ul>
 					<li><a href="#profile">Profile</a></li>
@@ -17,20 +17,52 @@
 			</nav>
 		</header>
 		
+		<div id="cover_photo">
+			<img class="test--profile_cover-photo" src="assets/cover.jpg"/>
+		</div>			
 		
-        <input class="input_text test--input_text" type="text">
-        <button type="submit" class="input_button test--input_button">Post</button>
-				
-		<section id="profile">
-			<h2> My Profile </h2>
-			<section class="profile"><a name="profile" />
-			
-			</section>
-		</section>
+		<div id="profile"><a name="profile"/>		
 
-        <section id="post_feed">
-            <h2>All My Posts</h2>
-            <section class="post_feed test--post_feed"><a name="post_feed" />
+			<div id="profile-left">
+				<img id="profile_photo" class="test--profile_photo" src="assets/avatar.png"/>
+				<section id="info">					
+					
+					<p id="profile_name" class="test--profile_name">Jhin, the Virtuoso</p>					
+					<p id="location" class="test--profile_location">Ionia</p>
+					
+					
+					<ul id="profile_links" class="test--profile_links">			
+						<li><a href="https://www.github.com/KevinMKang" >Github</a></li>
+						<li>kevinmkang97@gmail.com</li>
+						<li><a href="Wiki">Wiki Page</a></li>
+					</ul>
+				</section>
+			</div>
+			
+			<div id="profile-right">		
+					
+					<article id="about" class="bio test--profile_bio">
+						<h3>About me</h3>
+						This is a test biography.
+					</article>
+					
+					<article id="hobby" class="bio test--profile_hobbies">
+						<h3>Hobbies</h3>
+						My hobbies would go here.
+					</article>
+			</div>
+		</div>
+
+        <input class="input_text test--input_text" type="text" placeholder="Write up a text post here" />
+        <button type="submit" class="input_button test--input_button">Post Text</button>
+		
+		<input class="photo_url test--photo_url" type="text" placeholder="Submit a photo URL here" />
+        <button type="submit" class="photo_button test--photo_button">Post Image</button>
+		
+		
+        <section id="post_feed"><a name="post_feed" />
+            <h2>Recent Posts</h2>
+            <section class="post_feed test--post_feed">
             </section>
         </section>
 		

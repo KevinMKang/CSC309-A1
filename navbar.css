@@ -1,6 +1,8 @@
 /* E.g. Style Guide: https://google.github.io/styleguide/htmlcssguide.xml */
 
-
+body{
+	margin: 0px;
+}
 /**
  * Your main styles at the top apply to the smallest screen/viewport,
  * e.g. width of 320px, or anything less than the following breakpoint.
@@ -9,60 +11,53 @@
  * the "mobile" device sizes first, then overridden on larger devices.
  */
  
+body{
+	font-family: "Calibri";
+}
+ 
 header span.img {
     display: block;
 }	
-	a{
-		color: white;
-	}
-	
-	#logo{
-		background-color: PowderBlue;
-		color : white;
-		text-align: center;
-		width: 100%;
 
-		font-size: 200%;	
-		display: inline-block;
-		vertical-align: middle;	
-		padding: 10px 0px;
+#logo{
+	background-color: PowderBlue;
+	color : white;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 200%;	
+	display: inline-block;
+	vertical-align: middle;	
+	padding: 10px 0px;
+	
+}	
+	
+#menu{
+	background-color: LightGray;
+	color : white;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 200%;	
+	display: inline-block;
+	vertical-align: middle;
+}	
+
+#menu ul{
+	list-style: none;
+	margin: 10px;
+}
+
+#menu li{
+	color: grey;
+	margin: 10px 30px;
+}	
+
+#menu a{
+	color: white;
+	text-decoration: none;
+}
 		
-	}	
-		
-	#menu{
-		background-color: LightGray;
-		color : white;
-		text-align: center;
-		width: 100%;
-
-		font-size: 200%;	
-		display: inline-block;
-		vertical-align: middle;
-	}	
-	
-	ul{
-		list-style: none;
-		margin: 10px;
-	}
-	
-	li{
-		color: grey;
-		margin: 10px 30px;
-	}	
-		
-
-	
-
-
-/**
- * This is our first breakpoint!
- * If you increase the viewport (your browser window) size from 479px to 480px,
- * (e.g. depending on the mobile phone size, perhaps changing the orientation
- * of the phone to horizontal will trigger this breakpoint).
- * Note: there is no "upper limit" in this breakpoint, so any styles in other
- * following breakpoints after this could override this one.
- */
-
 @media screen and (min-width: 480px) {
 
     /**
@@ -78,27 +73,23 @@ header span.img {
 	
 		    
 }
-/* We're skipping a lot of possible breakpoints here ... */
-
-
-/**
- * At 1280px viewport width, any styles declared in this breakpoint will
- * override previous styles with matching signatures.
- */
 
 @media screen and (min-width: 1280px) {
     /* Re-style here, if necessary! */
 	
 	#logo{
 		width:15%;
+
 	}
 	
 	#menu{
-		width: 85%;
-		float: right;		
+		width: 35%;
+		float: right;	
+
+
 	}
 	
-	li{
+	#menu li{
 		display: inline;
 	}
 }
