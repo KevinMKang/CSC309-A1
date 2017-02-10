@@ -1,67 +1,57 @@
-/* E.g. Style Guide: https://google.github.io/styleguide/htmlcssguide.xml */
-
-
-/**
- * Your main styles at the top apply to the smallest screen/viewport,
- * e.g. width of 320px, or anything less than the following breakpoint.
- * Ordering the breakpoints in this way, smallest to biggest, is loosely
- * called a "mobile-first" approach to responsive design. The CSS targets
- * the "mobile" device sizes first, then overridden on larger devices.
- */
+/* This file contains two things: a body tag for the overall layout of the page, and styles for the navbar at the top. */ 
  
+/* Sets the globl font to calibri, and removes the extra margins on the side of the page. Also sets background colour and min width. */
 body{
 	font-family: "Calibri";
 	margin: 0px;
 	background-color: #F2F3F4;
 	min-width: 320px;
 }
- 
-header span.img {
-    display: block;
-}	
 
+/* Positioning and styling the header, containg logo and navbar. */
 header{
 	position: relative;
 	display: block;
-	border-bottom: 2px solid darkgray;
-	
+	border-bottom: 2px solid darkgray;	
 }
 
+/* Styling the Logo that appears at the top of the page. Mainly making it big.*/
 #logo{
-	background-color: white;
-	
+	background-color: white;	
 	text-align: center;
 	width: 100%;
 	color: darkgray;
 	font-size: 200%;	
 	display: inline-block;
-	vertical-align: middle;	
-
-	
-}	
-
-.menu_button{
-	float : right;
-	right: 0;
-	position: absolute;
-	z-index: 1;
-	background-color: white;
-	opacity: transparent;
-	height: 100%;
-	width: 10%;
-	text-align: center;
-	border-color: white;
-	border-radius: 5px;
+	vertical-align: middle;		
 }
 
+/* The dropdown menu when the navbar collapses in mobile mode. Sets a style and puts it to the top right. */
+.dropdown{
+	position: absolute;
+	float: right;
+	right: 0px;
+	top: 0px;
+	z-index: 1;
+	height: 100%;
+	width: 50px;
+	margin-right: 5px;
+}
+
+/* Colour change (to look like a button) when clicked */
+.dropdown:active{
+	background-color: lightgray;
+}
+
+/* These create three bars within the dropdown button. */
 .dropdown_sub{
 	width: 100%;
 	height: 10%;
 	background-color: darkgray;
-	margin: 5px 0;
-	
+	margin: 5px 0;	
 }
-	
+
+/* Don't display the menu unless dropdown is clicked. Absolutely positioned under the header. */
 #menu{
 	display: none;
 	position: absolute;
@@ -70,56 +60,55 @@ header{
 	text-align: center;
 	width: 100%;
 	padding: 0;
-}	
+}
 
-
+/* Removing list styling and margins/padding in the dropdown list. */
 #menu ul{
 	margin: 0px;
 	list-style: none;
 	padding-left: 0;
 }
 
+/* Giving each part (Profile, PostFeed) a separate border */
 #menu li{
 	border: darkgray solid 1px;
-
 }
 
+/* Styling the text in the list to make it big. */
 #menu a{
 	font-size: 200% !important;
 	color: darkgray;
 	text-decoration: none;
 }
 
+/* A hover effect to highlight each member in the dropdown menu. */
 #menu li:hover{
-	text-decoration: underline;
-	
+	text-decoration: underline;	
 }
 
+/* When the screen gets big enough, the navbar expands. */
 @media screen and (min-width: 1280px) {
 	
+	/* The logo now takes half the screen, not the entire screen. */
 	#logo{
 		width:50%;
 	}
 	
+	/* The menu takes the over half, and is now visible and block. */
 	#menu{
 		width: 50%;	
 		display: block !important;
 		position: relative;
 		float: right;
-
 	}
 	
-	.menu_button{
+	/* Stop displaying the dropdown button. */
+	.dropdown{
 		display: none;
 	}
 	
-	#cover_photo{
-		
-
-	}
-	
+	/* Restyle the navbar list to be inline instead of block, and add some space between the elements. */
 	#menu li{
-		background-color: none;
 		display: inline;
 		border: none;
 		margin: 0px 10%;

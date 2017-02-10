@@ -1,3 +1,7 @@
+/* This file sets styles for all components on the page related to actually posting a post. Mainly: Post Buttons, and Input Fields */
+
+
+/* Styling for the entire area of post submission, mainly centering it and moving it a little, and setting a maximum width to keep in line */
 .post_submit{
 
 	max-width: 800px;
@@ -5,48 +9,49 @@
 	text-align: center;
 }
 
+/* Buttons that open the posting inputs */
 .new_post{
-	margin-left: 50px;
 	font-size:150%;
-	border: darkgray solid 1px;
 	background-color: white;
-	border-radius: 5px;
-	color: darkgray;
+	color: black;
 }
 
-
-
+/* The part that contains the input field and the posting button */
 .posting_field{
 	width: 100%;
 	display: none;
-
 }
 
+/* The actual post button */
 .post_button{
-	border: darkgray solid 1px;
 	background-color: white;
-	border-radius: 5px;
-	color: darkgray;
 	font-size: 150%;
+	color: black;
 }
 
+/* The input field itself */
 .post_input{
 	width: 100%;
 	height: 100px;
 }
-
+/* Little hover effect for the buttons related to posting */
 .post_hover:hover{
 	background-color: lightgray;
 }
 
-@media screen and (min-width: 1280px) {
-	
+/* General border used for this entire section */
+.post_border{
+	border: darkgray solid 1px;
+	border-radius: 5px
+}
 
+@media screen and (min-width: 1280px) {	
+	
+	/* Setting small styling parameters and a new height on the input fields */
 	.posting_field{
 		margin-left: 100px;
 	}
 	.post_input{
 		height: 200px;
-		width: 100%;
 	}
 }

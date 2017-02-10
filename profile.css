@@ -1,23 +1,25 @@
-h2{
-	color : black;
-	font-size: 200%;
-	
-}
+/* This file contains styles for all components related to the profile of the user. */
 
-h3{
-	text-align: center;
-}
-
+/* Setting the maximum size of the profile for visuals, and font color to black. Also centering it. */
 #profile{	
 	width: 100%;
 	color: black;
 	max-width: 1000px;
 	margin: 0 auto;
-
 }
 
-#profile_photo{
+/* This is for the profile name. */
+#profile h2{
+	font-size: 200%;	
+}
 
+/* Used for the profile headers, mainly bio and hobbies. */
+#profile h3{
+	text-align: center;
+}
+
+/* Avatar is set at a certain size, and has a border around it to pop. */
+#profile_photo{
 	margin: 20px;
 	width: 150px;
 	height: 150px;
@@ -25,32 +27,32 @@ h3{
 	border-radius: 5px;
 }
 
-#location{
-	font-style: italic;
-}
-
+/* Styling the first part of the profile, containing avatar, location, and links. */
 #profile-left{
 	position: relative;
 	display: flex;
-	background-color: #F2F3F4;	
-
+	background-color: #F2F3F4;
 }
 
+/* Reducing the margin on the text part of profile-left */
 #info{
 	margin-left: -10px;
 }
 
+/* Make the person's name big, and reduce the spacing below. */
 #profile_name{
 	font-size: 200%;
 	font-weight: bold;
 	margin-bottom: -20px;
 }
 
+/* Links are a list, so we remove their styling and reduce margins in order to remove bullets. */
 #profile-left ul{
 	list-style: none;
 	margin-left: -40px;
 }
 
+/* The right side of the profile, containing hobbies and bio. Has border unlike the other part of the profile. */
 #profile-right{
 	background-color: white;	
 	width: 100%;	
@@ -58,16 +60,26 @@ h3{
 	border-radius: 5px;
 }
 
+/* Hobbies and bio are in profile-right, so we reduce width and set their text style. */
 .bio{
-		
-	margin: 0px 50px;
-	display: inline-block;
-	padding: 20px 0px;
+	width: 70%;	
 
+	display: inline-block;
+	margin-left: 15%;
 }
 
+/* Center hobbies since it's a list and it looks better that way. */
+#hobby{
+	text-align:center;	
+}
+
+/* The cover photo is centered to the screen, and has a fixed width but height is relative to the width of the screen. 
+ * Overflow is hidden, and it has a white border.
+ */
 #cover_photo{
-	width:100%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 	height: 60vw;
 	max-height: 400px;
 	overflow: hidden;
@@ -78,17 +90,20 @@ h3{
 	border-bottom: solid white 2px;
 }
 
-
-
-img{
-	vertical-align: middle;
+/* The actual cover photo is increased in height for better viewing. */
+#cover_photo img{
+	display: block;
+	height: 300%;
 }
 
+/* The profile changes rather radically in increased size. */
 @media screen and (min-width: 1280px) {
+	/* Now instead of stacking on top of eachother, profile-left and right will be beside eachother. */
 	#profile{
 		display: flex;
 	}
 	
+	/* This sets profile left to only take up a portion of the whole width, and moves it up to bleed into the cover photo. */
 	#profile-left{
 		font-size: 50%;
 		display: block;
@@ -100,16 +115,19 @@ img{
 		margin-bottom: -50px;
 	}
 	
+	/* Info needs to be restyled since the entire profile-left layout has changed. It now goes under the avatar instead of beside */
 	#info{
 		font-size: 15px;
 		margin-top:-30px;
 		margin-left: 20px;
 	}
 	
+	/* Bio is just made bigger in font size. */
 	.bio{
 		font-size: 16px;
 	}
 	
+	/* Profile right takes up the rest of the space in profile now. */
 	#profile-right{
 		width: 80%;
 		display: block;
