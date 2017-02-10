@@ -73,9 +73,12 @@ h3{
 	overflow: hidden;
 	position: relative;
 	text-align: center;
+	vertical-align: middle;
 	background-color: black;
 	border-bottom: solid white 2px;
 }
+
+
 
 img{
 	vertical-align: middle;
@@ -84,7 +87,6 @@ img{
 @media screen and (min-width: 1280px) {
 	#profile{
 		display: flex;
-
 	}
 	
 	#profile-left{
@@ -97,8 +99,6 @@ img{
 		background-color: rgba(0,0,0,0);
 		margin-bottom: -50px;
 	}
-	
-
 	
 	#info{
 		font-size: 15px;
@@ -114,8 +114,5 @@ img{
 		width: 80%;
 		display: block;
 		
-	}
-	
-	
-	
+	}	
 }

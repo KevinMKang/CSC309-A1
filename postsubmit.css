@@ -35,6 +35,10 @@
 	height: 100px;
 }
 
+.post_hover:hover{
+	background-color: lightgray;
+}
+
 @media screen and (min-width: 1280px) {
 	
 
