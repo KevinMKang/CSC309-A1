@@ -70,8 +70,6 @@ header{
 	text-align: center;
 	width: 100%;
 	padding: 0;
-
-
 }	
 
 
@@ -82,13 +80,13 @@ header{
 }
 
 #menu li{
-	border: black solid 1px;
+	border: darkgray solid 1px;
 
 }
 
 #menu a{
 	font-size: 200% !important;
-	color: black;
+	color: darkgray;
 	text-decoration: none;
 }
 

@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="profile.css">
 		<link rel="stylesheet" href="navbar.css">
 		<link rel="stylesheet" href="postfeed.css">
+		<link rel="stylesheet" href="postsubmit.css">
     </head>
     <body>
 	
@@ -16,9 +17,13 @@
 				<div class="dropdown_sub"></div>
 				<div class="dropdown_sub"></div>
 			</button>		
-			<span id='logo' class='img'>CSC309 Profile</span>			
+			<span id='logo' class='img'>CSC309 Profile</span>	
 			<nav id="menu" class="test--nav">				
-				<ul><li><a href="#profile">Profile</a></li><li><a href="#post_feed">Post Feed</a></li></ul>
+				<ul>
+					<li><a href="#profile">Profile</a></li>
+					<li><a href="#post_feed">Post Feed</a></li>
+					
+				</ul>
 			</nav>
 		</header>
 		
@@ -39,31 +44,41 @@
 					<ul id="profile_links" class="test--profile_links">			
 						<li><a href="https://www.github.com/KevinMKang" >Github</a></li>
 						<li>kevinmkang97@gmail.com</li>
-						<li><a href="Wiki">Wiki Page</a></li>
+						<li><a href="http://leagueoflegends.wikia.com/wiki/Jhin">Wiki Page</a></li>
+						<li><a href="http://gameinfo.na.leagueoflegends.com/en/game-info/champions/jhin/">Official Page</a></li>
 					</ul>
 				</section>
 			</div>
 			
 			<div id="profile-right">		
 					<h3>About me</h3>
-					<article id="about" class="bio test--profile_bio">
-						
-						This is a test biography.
+					<article id="about" class="bio test--profile_bio">						
+						Jhin is a meticulous criminal psychopath who believes murder is art. Once an Ionian prisoner, but freed by shadowy elements within Ionia's ruling council, the serial killer now works as their cabal's assassin. Using his Whisper.png gun as his paintbrush, Jhin creates works of artistic brutality, horrifying victims and onlookers. He gains a cruel pleasure from putting on his gruesome theater, making him the ideal choice to send the most powerful of messages: terror.
 					</article>
 					<h3>Hobbies</h3>
 					<article id="hobby" class="bio test--profile_hobbies">
-						
-						My hobbies would go here.
+						Art <br/>
+						Beauty <br/>
+						Collection <br/>
+						Traveling <br/>
 					</article>
 			</div>
 		</div>
-
-        <input class="input_text test--input_text" type="text" placeholder="Write up a text post here" />
-        <button type="submit" class="input_button test--input_button">Post Text</button>
 		
-		<input class="photo_url test--photo_url" type="text" placeholder="Submit a photo URL here" />
-        <button type="submit" class="photo_button test--photo_button">Post Image</button>
-		
+		<div class="post_submit">		
+			<button onclick="openTextBox()" class="new_post">New Text Post</button>
+			<button onclick="openPhotoBox()" class="new_post">New Photo Post</button>			
+			
+			<div id="textbox" class="posting_field">
+				<input class="post_input input_text test--input_text" type="text" placeholder="Write up a text post here" />
+				<button type="submit" class="post_button input_button test--input_button">Post Text</button>	
+			</div>
+			<div id="photobox" class="posting_field">
+				<input class="post_input photo_url test--photo_url" type="text" placeholder="Submit a photo URL here" />
+				<button type="submit" class="post_button photo_button test--photo_button">Post Image</button>
+			</div>
+	
+		</div>
 		
         <section id="post_feed" class="post_feed_wrapper">
             <h2>Recent Posts</h2>

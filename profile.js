@@ -1,15 +1,28 @@
 var id = 0;
-
+var imgTypes = ["png", "jpg", "gif", "bmp"];
 function openMenu(){
 	document.getElementById('menu').style.display =  document.getElementById('menu').style.display == 'block' ? 'none' : 'block';
+}
+
+
+function openTextBox(){
+	document.getElementById('textbox').style.display =  document.getElementById('textbox').style.display == 'block' ? 'none' : 'block';
+	//document.getElementById('post_box').style.display =  document.getElementById('post_box').style.display == setting ? 'none' : setting;
+}
+
+function openPhotoBox(){
+	document.getElementById('photobox').style.display =  document.getElementById('photobox').style.display == 'block' ? 'none' : 'block';
+	//document.getElementById('post_box').style.display =  document.getElementById('post_box').style.display == setting ? 'none' : setting;
 }
 
 $(function(){
     $('.input_button').on('click', function(){
         text = $('.input_text').val();
-        if (text != undefined) {
+        if (text != undefined && text!='') {
             post = makeNewPost(text, false);
-            new_post = $('.post_feed').append($(post)) 
+            new_post = $('.post_feed').append($(post));
+			$('.input_text').val('');
+			openTextBox();
         }		
     });
 });
@@ -22,6 +35,7 @@ function addLike(id){
 function makeNewPost(text,image){
 	id+=1;
 	content = image ? '<img class="imgPost" src="' + text + ' "/>' : text;
+	
 	return (
 	'<div class="post test--post">\
 		<div class="post_head">\
@@ -43,9 +57,11 @@ function makeNewPost(text,image){
 $(function(){
     $('.photo_button').on('click', function(){
         text = $('.photo_url').val();
-        if (text != undefined) {
+        if (text != undefined && text!='' && imgTypes.indexOf(text.substring(text.length-3,text.length))!=-1 ){
             post = makeNewPost(text,true);
-            new_post = $('.post_feed').append($(post)) 
+            new_post = $('.post_feed').append($(post));
+			$('.photo_url').val('');
+			openPhotoBox();
         }
 		
     });

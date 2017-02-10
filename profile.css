@@ -33,6 +33,7 @@ h3{
 	position: relative;
 	display: flex;
 	background-color: #F2F3F4;	
+
 }
 
 #info{
@@ -58,9 +59,10 @@ h3{
 }
 
 .bio{
-	font-size: 200%;	
+		
 	margin: 0px 50px;
 	display: inline-block;
+	padding: 20px 0px;
 
 }
 
@@ -93,6 +95,7 @@ img{
 		text-align: left;
 		top : -75px;
 		background-color: rgba(0,0,0,0);
+		margin-bottom: -50px;
 	}
 	
 

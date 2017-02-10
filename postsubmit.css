@@ -1,0 +1,48 @@
+.post_submit{
+
+	max-width: 800px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.new_post{
+	margin-left: 50px;
+	font-size:150%;
+	border: darkgray solid 1px;
+	background-color: white;
+	border-radius: 5px;
+	color: darkgray;
+}
+
+
+
+.posting_field{
+	width: 100%;
+	display: none;
+
+}
+
+.post_button{
+	border: darkgray solid 1px;
+	background-color: white;
+	border-radius: 5px;
+	color: darkgray;
+	font-size: 150%;
+}
+
+.post_input{
+	width: 100%;
+	height: 100px;
+}
+
+@media screen and (min-width: 1280px) {
+	
+
+	.posting_field{
+		margin-left: 100px;
+	}
+	.post_input{
+		height: 200px;
+		width: 100%;
+	}
+}
